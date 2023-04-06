@@ -12,13 +12,20 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <section class='container mt-5'>
-        <div>
-            <h4>{{nombre}}</h4>
-            <p>Texto Mensaje</p>
-        </div>
-    </section>
+    <h1>Hello, world!</h1>
 
+      <form action="" method="post">
+            {% csrf_token %}
+            <div class='container bg-primary w-25 rounded-2 p-1' >
+                  <input  class='border-none rounded-3' placeholder='Nombre' Required type="text" name='nombre'>
+                  <input  class='border-none rounded-3' placeholder=' Numero' type="number" name="numero" id="">
+
+                  <div class='container rounded-3 '>
+                        <button type="submit" class='border-0 rounded-3'>Entrar</button>
+                  </div>
+            </div>
+
+      </form>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
