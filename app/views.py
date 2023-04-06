@@ -28,9 +28,7 @@ def login(request):
                         registros.nombre = registrar_usuario.nombre
                         registros.save()
                         return HttpResponseRedirect('/home/')
-                        
-                        
-                        
+                                             
     return render(request, 'app/login.html')
 
 
