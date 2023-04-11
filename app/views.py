@@ -36,7 +36,7 @@ def home(request):
     registros = Registros.objects.all()
     nombre = ''
     for user in registros:
-        nombre = user.nombre
+        nombre = user.nombre 
     
     context = {
         'nombre': nombre,
